@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="mb-3">{{ category.replace('_',' ').title() }}</h3>
+
+<ul class="list-group">
+{% for article in articles %}
+    <li class="list-group-item list-group-item-action">
+        <a href="/article/{{ category }}/{{ article }}"
+           class="text-decoration-none text-dark d-block">
+            {{ article.replace('_',' ').title() }}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

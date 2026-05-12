@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4 class="mb-3">
+    Search results for "{{ query }}"
+</h4>
+
+{% if results %}
+<ul class="list-group">
+    {% for r in results %}
+    <li class="list-group-item list-group-item-action">
+        <a href="/article/{{ r.category }}/{{ r.title.lower().replace(' ', '_') }}"
+           class="text-decoration-none text-dark d-block">
+            <strong>{{ r.title }}</strong>
+            <div class="text-muted small mt-1">
+                {{ r.snippet }}...
+            </div>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p class="text-muted">No results found.</p>
+{% endif %}
+
+{% endblock %}

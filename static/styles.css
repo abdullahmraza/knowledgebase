@@ -1,0 +1,16 @@
+/* Dark hover effect for KB list items */
+
+
+
+.list-group-item-action:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Ensure link text also turns white */
+.list-group-item-action:hover a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+
