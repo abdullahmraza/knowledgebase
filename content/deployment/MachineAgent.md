@@ -1,7 +1,7 @@
-# AppDynamics Java Agent Deployment
+# AppDynamics Machine Agent Deployment
 
 ## Overview
-This document explains how to deploy AppDynamics Java Agent on Linux.
+This document explains how to deploy AppDynamics Machine Agent on Linux.
 
 ## Prerequisites
 - Java 11+
