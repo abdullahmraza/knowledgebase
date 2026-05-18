@@ -33,7 +33,9 @@ appdynamics-php-agent.x86_64-23.11.0.839.rpm
 6. Navigate to the php.d directory depending on the location where php is installed on the system, and edit newly created appdynamics_agent.ini file and add below lines in the file
 
 agent.cli_enabled = 1
+
 agent.auto_launch_proxy = 0
+
 agent.proxy_ctrl_dir = /opt/appdynamics/phpagent/proxy.communication
 
 ![image](/static/media/php2.png)
@@ -43,6 +45,7 @@ agent.proxy_ctrl_dir = /opt/appdynamics/phpagent/proxy.communication
 ![image](/static/media/php3.png)
 
 Execute chmod 775 *
+
 Execute proxy/runProxy /opt/appdynamics/phpagent/proxy.communication /opt/appdynamics/phpagent/logs/ &
 
 8. Execute ps -ef | grep proxy to check and confirm the running process from php agent.
