@@ -9,10 +9,13 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
 ## Step-by-Step
 
 1. Run php -I to check the running php version
+   
 2. Run php -i | grep -e "Debug Build" and the response should be Debug Build = > no
+   
 3. mkdir /opt/appdynamics; mkdir /opt/appdynamics/phpagent; mkdir
     /opt/appdynamics/phpagent/proxy.communication; mkdir
     /opt/appdynamics/phpagent/logs
+   
 4. Navigate to the directory where we have copied php agent rpm on the
     server and execute below command
 
@@ -25,6 +28,7 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
 	APPD_PROXY_CTRL_DIR=/opt/appdynamics/phpagent/proxy.communication
 	APPD_CONF_LOG_DIR=/opt/appdynamics/phpagent/logs/ sudo -E rpm -i
 	appdynamics-php-agent.x86_64-23.11.0.839.rpm
+
 5. Execute find / -name appdynamics_agent.ini to get the installed
     location of php agent. There will be two appdynamics_agent.ini
     created. One under the installed location of the php agent, other
@@ -48,5 +52,7 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
 
 	Execute chmod 775 *
 	Execute proxy/runProxy /opt/appdynamics/phpagent/proxy.communication /opt/appdynamics/phpagent/logs/ &
+
 8. Execute ps -ef \| grep proxy to check and confirm the running process from php agent.
+   
 9. Verify the newly created application on the appdynamics controller.
