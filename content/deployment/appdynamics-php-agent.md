@@ -20,8 +20,7 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
    APPD_CONF_SSL_ENABLED=true
    APPD_PROXY_CTRL_DIR=/opt/appdynamics/phpagent/proxy.communication
    APPD_CONF_LOG_DIR=/opt/appdynamics/phpagent/logs/ sudo -E rpm -i appdynamics-php-agent.x86_64-23.11.0.839.rpm
-5. Execute find / -name appdynamics_agent.ini to get the installed  location of php agent. There will be two appdynamics_agent.ini created. One under the installed location of the php agent, other would be the base location of the php application installed on the server.
-   
+5. Execute find / -name appdynamics_agent.ini to get the installed  location of php agent. There will be two appdynamics_agent.ini created. One under the installed location of the php agent, other would be the base location of the php application installed on the server.   
    ![image](/static/media/php1.png)
 6. Navigate to the php.d directory depending on the location where php is installed on the system, and edit newly created appdynamics_agent.ini file and add below lines in the file
    agent.cli_enabled = 1
