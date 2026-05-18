@@ -34,9 +34,10 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
    agent.auto_launch_proxy = 0
    
    agent.proxy_ctrl_dir = /opt/appdynamics/phpagent/proxy.communication
+   
    ![image](/static/media/php2.png)
 
-7. Navigate to php agent installed location, in our case it was /usr/lib/appdynamics-php-agent.
+8. Navigate to php agent installed location, in our case it was /usr/lib/appdynamics-php-agent.
  
    ![image](/static/media/php3.png)
    
@@ -44,6 +45,6 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
    
    Execute proxy/runProxy /opt/appdynamics/phpagent/proxy.communication /opt/appdynamics/phpagent/logs/ &
 
-8. Execute ps -ef | grep proxy to check and confirm the running process from php agent.
+9. Execute ps -ef | grep proxy to check and confirm the running process from php agent.
 
-9. Verify the newly created application on the appdynamics controller.
+10. Verify the newly created application on the appdynamics controller.
