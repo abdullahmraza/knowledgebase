@@ -29,6 +29,7 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
 
 ![image](/static/media/php1.png)
 
+
 6. Navigate to the php.d directory depending on the location where php is installed on the system, and edit newly created appdynamics_agent.ini file and add below lines in the file
 
 agent.cli_enabled = 1
@@ -39,9 +40,11 @@ agent.proxy_ctrl_dir = /opt/appdynamics/phpagent/proxy.communication
 
 ![image](/static/media/php2.png)
 
+
 7. Navigate to php agent installed location, in our case it was /usr/lib/appdynamics-php-agent.
 
 ![image](/static/media/php3.png)
+
 
 Execute chmod 775 *
 
