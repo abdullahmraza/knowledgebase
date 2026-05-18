@@ -8,8 +8,8 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
 
 ## Step-by-Step
 
-1. Run php -I** to check the running php version
-2. Run php -i \| grep -e \"Debug Build\"** and the response should be Debug Build =\> no
+1. Run php -I to check the running php version
+2. Run php -i | grep -e "Debug Build" and the response should be Debug Build = > no
 3. mkdir /opt/appdynamics; mkdir /opt/appdynamics/phpagent; mkdir
     /opt/appdynamics/phpagent/proxy.communication; mkdir
     /opt/appdynamics/phpagent/logs
