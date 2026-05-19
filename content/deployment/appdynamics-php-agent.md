@@ -12,11 +12,11 @@ This document explains how to deploy AppDynamics PHP Agent for PHP Applications
 2. Run **php -i | grep -e "Debug Build"** and the response should be **Debug Build = > no**
 3. **mkdir /opt/appdynamics; mkdir /opt/appdynamics/phpagent; mkdir /opt/appdynamics/phpagent/proxy.communication; mkdir /opt/appdynamics/phpagent/logs**
 4. Navigate to the directory where we have copied php agent rpm on the server and execute below command
-   **APPD_CONF_CONTROLLER_HOST=appdsan1.services.conduent.com
-   APPD_CONF_CONTROLLER_PORT=443 APPD_CONF_APP=HCI_Prod APPD_CONF_TIER=php
-   APPD_CONF_NODE=HCIPCHPWEB01_10.105.176.9
+   **APPD_CONF_CONTROLLER_HOST=controller
+   APPD_CONF_CONTROLLER_PORT=443 APPD_CONF_APP=appname APPD_CONF_TIER=php
+   APPD_CONF_NODE=node-name
    APPD_CONF_ACCOUNT_NAME=customer1
-   APPD_CONF_ACCESS_KEY=cbea9406-40c3-4d94-a63b-e985aee7b278
+   APPD_CONF_ACCESS_KEY=acccesskey
    APPD_CONF_SSL_ENABLED=true
    APPD_PROXY_CTRL_DIR=/opt/appdynamics/phpagent/proxy.communication
    APPD_CONF_LOG_DIR=/opt/appdynamics/phpagent/logs/ sudo -E rpm -i appdynamics-php-agent.x86_64-23.11.0.839.rpm**
